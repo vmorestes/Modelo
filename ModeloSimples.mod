@@ -122,11 +122,11 @@ exp(R)/Rbar = (exp(R(-1))/Rbar)^phir*(exp(PI)/PIbar)^phipi*exp(emp);
 
 // Equilibrium Conditions
 //. 14 Domestic goods demand
-exp(yd) = exp(c) + nx ;
+exp(yd) = exp(c) + exp(nx) ;
 //. 15 Domestic goods supply
 exp(yd) = exp(n)^(1-alpha)*exp(a)*exp(delta)^(alpha - 1);
 //. 16 BP = 0
-nx + binv/(exp(R)*exp(s)) - binv(-1)/exp(s)   = 0;
+exp(pfstar)*exp(nx) + binv/(exp(R)*exp(s)) - binv(-1)/exp(s)   = 0;
 
 
 //exogenous processes
